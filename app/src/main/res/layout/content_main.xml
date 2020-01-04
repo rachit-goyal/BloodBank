@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="in.aaaos.bloodbank.MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:theme="@style/ToolbarColoredBackArrow"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="Select What You Are!"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativelayoutfirst"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iim"
+            android:foreground="@drawable/gradient_bg"
+            >
+
+            <ImageView
+                android:id="@+id/imageviewsub"
+                android:src="@drawable/ecg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/textviewsub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iim"
+            android:layout_alignTop="@id/iim"
+            android:layout_alignRight="@id/iim"
+            android:layout_alignBottom="@id/iim"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:text="I am donor"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativelayoutsecond"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iims"
+            android:foreground="@drawable/gradient_bg"
+            >
+
+            <ImageView
+                android:id="@+id/imageviewsubsecond"
+                android:layout_width="match_parent"
+                android:src="@drawable/mblood"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/textviewsubsecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/iims"
+            android:layout_alignTop="@id/iims"
+            android:layout_alignRight="@id/iims"
+            android:layout_alignBottom="@id/iims"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:text="I need blood"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</LinearLayout>
